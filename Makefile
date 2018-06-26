@@ -52,6 +52,7 @@ example: install
 	@go install ./vendor/github.com/golang/protobuf/protoc-gen-go
 	@go install ./vendor/github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 	@go install ./vendor/go.uber.org/yarpc/encoding/protobuf/protoc-gen-yarpc-go
+	@go install ./internal/cmd/protoc-gen-dummy
 	rm -rf example/gen
 	prototool all example/idl/uber
 	touch ./example/gen/proto/go/foo/.nocover

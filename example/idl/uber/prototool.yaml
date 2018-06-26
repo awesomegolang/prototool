@@ -31,3 +31,5 @@ gen:
     - name: grpc-gateway
       type: go
       output: ../../gen/proto/go
+    - name: dummy
+      output: ../../gen/proto/dummy
